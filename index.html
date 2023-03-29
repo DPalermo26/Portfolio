@@ -23,15 +23,17 @@
         </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio">INICIO</a></li>
-            <li><a href="#sobremi">SOBRE MI</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#curriculum">CURRICULUM</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
           </ul>
         </nav>
-        <div class="nav-responsive">
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
@@ -432,5 +434,66 @@
         </div>
       </div>
     </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Riccheri 1066. Rosario, Santa Fe.
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamame: (+54) 341-3738126
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: palermodanilo01@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
